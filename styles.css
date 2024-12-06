@@ -1,0 +1,202 @@
+*
+{   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body 
+{
+    height: 100vh;
+    display: flex;
+    background: #060AB2;
+}
+  
+.memory-game
+{
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+  
+.memory-card
+{
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+  
+.memory-card:active 
+{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+  
+.memory-card.flip 
+{
+    transform: rotateY(180deg);
+}
+  
+.front-face, .back-face
+{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
+}
+  
+.front-face 
+{
+    transform: rotateY(180deg);
+}
+
+
+/*Mon code*/
+::backdrop
+{
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+}
+
+#fenetreMegaman
+{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 18px;
+    border: 1px blue solid;
+    margin: auto;
+}
+
+#boite
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulaire
+{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 30px;
+    margin-left: 32px;
+    margin-bottom: 18px;
+    margin-right: 32px;
+}
+
+#nomProjet
+{
+    font-size: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr
+{
+    align-self: center;
+    width: 300px;
+    height: 1px;
+    background-color:mediumblue;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: none;
+}
+
+#infoProjet
+{
+    text-align: center;
+    font-style: italic;
+}
+
+#contenu
+{
+    align-items: center;
+    display: flex;
+}
+
+.titreContenu
+{
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#lien
+{
+    text-decoration: none;
+}
+
+#image
+{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 210px;
+}
+img
+{
+    width: 65%;
+}
+
+#finDeForm
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fermerFenetre
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 120%;
+    background-color:#1C7CCC;
+    color: white;
+    height: 45px;
+    width: fit-content;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 8px;
+}
+button:hover
+{
+    cursor: pointer;
+}
+
+#nePlusAfficher
+{
+    font-style: italic;
+    cursor: pointer;
+}
+
+#sectionTheme
+{
+    margin-right: 10px;
+}
+
+#themes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theme
+{
+    margin-bottom: 5px;
+    width: 180px;
+    border-radius: 15px;
+}

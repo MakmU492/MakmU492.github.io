@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Jeu de mémoire</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <dialog id="fenetreMegaman">
+    <form method="dialog" id="formulaire">
+        <div id="boite">
+            <p id="nomProjet">Projet personnel</p>
+            <hr>
+            <p id="infoProjet">Design Web gr.2 - Automne 2024</p>
+        </div>
+        <div id="contenu">
+            <div id="informationCreation">
+                <p class="titreContenu">Réalisé par:</p>
+                <p>Mickola Turcotte Fortier</p>
+                <br>
+                <p class="titreContenu">Inspiration</p>
+                <a href="https://marina-ferreira.github.io/memory-game/" id="lien">https://marina-ferreira.github.io/memory-game/</a href>
+            </div>
+            <div id="image">
+                <img src="./img/megaman.png" alt="MegaMan">
+            </div>
+        </div>
+        <div id="finDeForm">
+            <button id="fermerFenetre">Fermer la fenêtre</button>
+            <p id="nePlusAfficher">Ne plus afficher cette fenêtre</p>
+        </div>
+      </form>
+    </dialog>
+    
+  <section class="memory-game">
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face image1" src="./img/aurelia.svg" alt="Aurelia" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face image1" src="./img/aurelia.svg" alt="Aurelia" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face image2" src="./img/vue.svg" alt="Vue" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face image2" src="./img/vue.svg" alt="Vue" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face image3" src="./img/angular.svg" alt="Angular" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face image3" src="./img/angular.svg" alt="Angular" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face image4" src="./img/ember.svg" alt="Ember" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face image4" src="./img/ember.svg" alt="Ember" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face image5"  src="./img/backbone.svg" alt="Backbone" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face image5" src="./img/backbone.svg" alt="Backbone" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face image6" src="./img/react.svg" alt="React" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face image6" src="./img/react.svg" alt="React" />
+      <img class="back-face" src="./img/js-badge.svg" alt="JS Badge" />
+    </div>
+  </section>
+  
+  <script defer src="./script.js"></script>
+  
+  <div id="sectionTheme">
+    <h1 id="texteTheme">Thèmes disponibles</h1>
+    <div id="themes">
+      <button id="themeFF" class="theme">Final Fantasy XIV</button>
+      <button id="themeChat" class="theme">Chats</button>
+      <button id="themeLoz" class="theme">Legend of Zelda</button>
+    </div>
+  </div>
+</body>
+</html>
